@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="RedBlackTreeTests.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RedBlackTree_CSharp\RedBlackTree_CSharp.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FsCheck.NUnit" Version="3.3.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+      <PackageReference Include="NUnit.Analyzers" Version="4.9.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="NUnit3TestAdapter" Version="5.1.0-alpha.3" />
+    </ItemGroup>
+
+</Project>
